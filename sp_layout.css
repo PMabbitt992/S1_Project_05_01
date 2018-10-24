@@ -14,29 +14,33 @@
 */
 
 /* Window and Body Styles */
+/* height for html set */
 html {
     height: 100%;
+}
+
+/* body width, minimum and maximum width set, marginv auto for centering, minimum height set */
+body {
+    width: 95%;
+    min-width: 640px;
+    max-width: 960px;
+    margin: auto;
     min-height: 100%;
 }
 
-body {
-    width: 95%;
-    min-width: 640;
-    max-width: 960;
-    /*center*/
-}
-
+/* header nav ul li and a element box style set */
 header,
 nav,
 ul,
 li,
 a {
-    display: block;
+    box-sizing: border-box;
 }
 
 
 
 /* Row Styles */
+/* Rows will be displayed after floats are clear */
 .row::after {
     clear: both;
     content: "";
@@ -48,30 +52,105 @@ a {
 
 /* Page Header Styles */
 
+/* Header padding and width, image width and display, and link width and display set */
+header nav {
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 30%;
 
+}
+
+header img {
+    display: block;
+    width: 70%;
+    float: left;
+}
+
+
+header nav li a {
+    display: block;
+    width: 100%;
+}
 
 
 
 
 /* Horizontal Navigation List Styles */
 
+nav.horizontal li {
+    display: block;
+    float: left;
+    width: 12.5%;
+}
 
 
 
 /* Topics Styles */
+ul#topics li {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: 1.5%;
+    list-style-type: none;
+}
 
+ul#topics li:first-of-type {
+    margin-left: 7.75%;
+}
 
+ul#topics li:last-of-type {
+    margin-right: 7.75%;
+}
 
+ul#topics img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
 
 
 
 /* HR Styles */
-
+/* hr set to half the page */
+hr {
+    width: 50%;
+}
 
 
 
 /* Customer Comment Styles */
+/* ul#comments width, margins, #comments li margins and size, #comments image size, display,margins, paragrapgh width and display set */
+ul#comments {
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
 
+ul#comments li {
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+}
 
+ul#comments img {
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ul#comments p {
+    float: left;
+    width: 70%;
+}
 
 /* Footer Styles */
+/* footer will appear after floats are cleared */
+footer {
+    clear: both;
+}
